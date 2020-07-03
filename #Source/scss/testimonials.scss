@@ -1,0 +1,104 @@
+.testimonials{
+    background: url('/shapeUp/img/testimonials_bg.png') center / cover no-repeat;
+    
+    padding: 5% 0 9.6%;
+    
+    text-align: center;
+    
+    &__subtitle{
+        line-height: 50px;
+        &:after{
+            margin: 29px auto 50px;
+        }
+    }
+    
+    &-slider{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1130px;
+    }
+
+}
+
+
+.testimonial{
+    max-width: 550px;
+    background-color: #222;
+    font-family: 'Lato';
+    text-align: left;
+    margin: 0 10px 0 ;
+    
+    &__img{
+       
+        width: 1280px;
+        min-height: 300px;
+        
+        &--1{
+            background: url('/shapeUp/img/testimonial_1.png') center / cover no-repeat ;
+        }
+        
+        &--2{
+            background: url('/shapeUp/img/testimonial_2.png') center / cover no-repeat ;
+        }
+
+    }
+    
+    &__container{
+        display: flex;
+    }
+    
+    &__body{
+        padding: 32px 25px 35px;
+    }
+    
+    &__name{
+        
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 600;
+        color: #12c2e9;
+    }
+    
+    &__work{
+
+        font-size: 10px;
+        line-height: 24px;
+        color: #fff;
+        
+        margin: 0 0 20px;
+    }
+    
+    &__text{
+        font-size: 12px;
+        line-height: 24px;
+        color: #fffefe;
+        
+        margin: 0 0 29px;
+    }
+    
+    &__rate{
+        width: 94px;
+        height: 14px;
+        background: url('/shapeUp/img/spritesheet.png') -630px -5px;
+        
+        &--2{
+            background: url('/shapeUp/img/spritesheet.png') -734px -5px;
+        }
+    }
+}
+
+.photo-slider{
+    background-color: #111;
+    padding: 0.11111111111111% 0;
+    
+    &__item{
+        margin: 0 30px;
+    }
+}
+
+@media all and(max-width: 1150px){
+    .testimonials-slider{
+        max-width: 550px;
+        margin: 0 auto;
+    }
+}

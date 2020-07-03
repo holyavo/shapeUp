@@ -1,0 +1,77 @@
+.programs{
+    background-color: #161616;
+    
+    padding: 6.2% 0;
+    
+    text-align: center;
+    
+    &__subtitle{
+        
+        &:after{
+            margin: 29px auto 50px;
+        }
+    }
+    
+    &__body{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+.program{
+    font-family: 'Lato';
+    
+    flex: 1 1 33.33333%;
+    
+    padding: 0 31px 50px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    &__img{
+        width: 100px;
+        height: 100px;    
+        
+        margin: 0 auto 46px;
+        
+        &--1{
+            background: url('/shapeUp/img/spritesheet.png') -128px -10px no-repeat;
+        }
+        &--2{
+            background: url('/shapeUp/img/spritesheet.png') -238px -10px no-repeat;
+        }
+        &--3{
+            background: url('/shapeUp/img/spritesheet.png') -348px -10px no-repeat;
+        }
+    }
+    
+    &__title{
+        font-size: 22px;
+        line-height: 24px;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+        color: #fefefe;
+        
+        margin: 0 0 30px;
+    }
+    
+    &__text{
+        font-size: 12px;
+        line-height: 24px;
+        letter-spacing: 0.05em;
+        color: #fefefe;
+        
+        margin: 0  0 33px;
+    }
+    
+    &__btn{
+        display: block;
+        width: 140px;
+        height: 50px;
+        
+        margin: 0 auto !important;
+    }
+    
+}

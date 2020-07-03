@@ -1,0 +1,135 @@
+.news{
+    background-color: #161616;
+    
+    padding: 5% 0;
+    
+    text-align: center;
+    
+    &__subtitle{
+        &:after{
+            margin: 29px auto 50px;
+        }
+    }
+    
+    &__container{
+        display: flex;
+        justify-content: space-between;
+        
+        max-width: 1190px;
+        
+    }
+    
+    &-block{
+        width: 262px;
+        cursor: pointer;
+        
+        margin: 0 15px;
+        
+        &__img{
+            overflow: hidden;
+            
+            img{
+                transition: all .2s linear;
+            }
+
+        }
+        
+        &__body{
+           border: 2.0px solid #222222;
+            border-top: none;
+            
+            font-family: 'Lato';
+            
+            padding: 38px 20px 30px;
+            text-align: left;
+
+        }
+        
+        &__title{
+            font-size: 12px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #f80759;
+            
+            margin: 0 0 15px;
+        }
+        &__subtitle{
+    
+            font-size: 18px;
+            line-height: 24px;
+            font-weight: 700;
+            color: #ffffff;
+            
+            margin: 0 0 28px;
+        }
+        &__text{
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #ffffff;
+            
+            margin: 0 0 18px;
+        }
+        &__link{
+
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #f80759;
+        }
+        &__container{
+            display: flex;
+            justify-content: space-between;
+            
+            font-size: 14px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #12c2e9;
+            
+            margin: 29px 0 0 ;
+            
+        }
+        
+        &__like{
+            display: inline-block;
+            background: url('/shapeUp/img/spritesheet.png') 351px -10px;
+            width: 16px;
+            height: 14px;
+            margin: 0 0 0 3px;
+        }
+        
+        &:hover{
+            .news-block__img{
+                img{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}
+
+@media all and (max-width: 1170px){
+    
+    .news__container{
+        max-width: 876px;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 945px){
+    
+    .news__container{
+        max-width: 554px;
+        margin: 0 auto;
+    }
+}
+
+@media all and (max-width: 587px){
+    
+    .news__container{
+        max-width: 292px;
+        margin: 0 auto;
+    }
+}
+
+

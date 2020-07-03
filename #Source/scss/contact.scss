@@ -1,0 +1,38 @@
+.contact{
+    background: url('/shapeUp/img/contact_bg.jpg') center / cover no-repeat;
+    padding: 5% 0;
+    
+    text-align: center;
+    
+    &__subtitle{
+
+        &:after{
+            margin: 29px auto 50px;
+        }   
+        
+        a{
+            font-size: 48px;
+            line-height: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            color: #ffffff;
+        }
+    }
+    
+    &__text{
+        
+        max-width: 615px;
+        margin: 0 auto 7%;
+        
+        font-size: 18px;
+        line-height: 30px;
+        font-weight: 300;
+        color: #ffffff;
+    }
+    
+    &__btn{
+        display: block;
+        margin: 0 auto !important;
+    }
+}
