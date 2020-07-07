@@ -49,6 +49,7 @@ $(document).ready(function () {
             arrows: false,
             //variableWidth: true,
             infinite: true,
+         arrows: true,
             dots: true,
          responsive:[
              {
@@ -58,6 +59,14 @@ $(document).ready(function () {
                         slidesToScroll: 1,
                                  infinite: true,
                         dots: true,
+                }
+             },
+                          {
+                 breakpoint: 800,
+                 settings:{
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
                 }
              }
          ] 
@@ -69,7 +78,10 @@ $(document).ready(function () {
             arrows: false,
             centerMode: true,
             centerPadding: '200px',
-         dots:true,
+         autoplay: true,
+         autoplaySpeed: 2000,
+         
+        
          responsive:[
              {
                  breakpoint: 1150,
@@ -92,7 +104,7 @@ $(document).ready(function () {
                  settings:{
                     slidesToShow: 1,
                     slidesToScroll: 1,
-                    centerMode: false,
+                    centerPadding: '50px',
                 }
              },
 
@@ -109,8 +121,9 @@ $(document).ready(function () {
                  breakpoint: 1170,
                  settings:{
                         slidesToShow: 3,
-                        slidesToScroll: 1,
-                        //dots: true,
+                        slidesToScroll: 3,
+                        dots: true,
+                     arrows: true,
                 }
              },
              
@@ -120,6 +133,16 @@ $(document).ready(function () {
                         slidesToShow: 2,
                         slidesToScroll: 2,
                         dots: true,
+                      arrows: true,
+                }
+             },            
+             {
+                 breakpoint: 800,
+                 settings:{
+                        slidesToShow: 2,
+                        slidesToScroll: 2,
+                        dots: true,
+                      arrows: false,
                 }
              },
              
@@ -129,6 +152,7 @@ $(document).ready(function () {
                         slidesToShow: 1,
                         slidesToScroll: 1,
                         dots: true,
+                      arrows: false,
                 }
              },
          ] 

@@ -1,7 +1,7 @@
 .header{
     
     background: url('/shapeUp/img/header_bg.jpg') center / cover no-repeat;
-    padding: 32px 0 14.2%;
+    padding: .1% 0 14.2%;
     
     font-family: 'Lato';
     
@@ -9,13 +9,19 @@
     &__top{
         display: flex;
         justify-content: space-between;
+        padding: 16px 20px;
+        background: rgba(0, 0, 0, .6);
         
-        margin: 0 0 18%;
+        position: absolute;
+        width: 100%;
+        left: 0;
+        top: 0;
+  
     }
     
     &__main{
         max-width: 615px;
-        
+        margin: 18% 0 0;
         p:nth-of-type(1), p:nth-of-type(2){
             //font-size: 60px;
             font-size: calc(40px + 20 *(100vw/1920));
@@ -83,7 +89,8 @@
 }
 
 .logo{
-    
+    position: relative;
+    z-index: 3;
     &__img{
         display: inline-block;
         width: 40px;
